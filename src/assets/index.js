@@ -26,17 +26,17 @@ import DarkGreenLongArrow from "./icons/DarkGreenLongArrow.svg?react";
 import BlackLongArrow from "./icons/BlackArrowLong.svg?react";
 
 export const Icons = {
-    Logo,
-    Search,
-    LogIn,
-    Instagram,
-    GreenLongArrow,
-    GreenInstagram,
-    GrayLongArrow,
-    GrayArrowLeft,
-    GrayArrowRight,
-    FaceBook,
-    Ellipse,
-    DarkGreenLongArrow,
-    BlackLongArrow
-},
+  Logo,
+  Search,
+  LogIn,
+  Instagram,
+  GreenLongArrow,
+  GreenInstagram,
+  GrayLongArrow,
+  GrayArrowLeft,
+  GrayArrowRight,
+  FaceBook,
+  Ellipse,
+  DarkGreenLongArrow,
+  BlackLongArrow,
+};
