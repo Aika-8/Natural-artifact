@@ -3,7 +3,7 @@ import { IconButton as MuiIconButton } from "@mui/material";
 import React, { useState } from "react";
 
 export const IconButton = React.forwardRef(
-  ({ onClick, disabled, children, variant, ...props }, ref) => {
+  ({ onClick, disabled, children, variant, customFrame }, ref) => {
     const [active, setActive] = useState(false);
     const handleClick = (e) => {
       setActive((prev) => !prev);
@@ -16,43 +16,25 @@ export const IconButton = React.forwardRef(
         onClick={handleClick}
         disabled={disabled}
         variant={variant}
+        customFrame={customFrame}
         className={active ? "active" : ""}
-        {...props}
       >
         {children}
       </StyledMuiIconButton>
     );
   }
 );
-const StyledMuiIconButton = styled(MuiIconButton)({
-//   width: "58px",
-//   height: "58px",
+
+const StyledMuiIconButton = styled(MuiIconButton, {
+  shouldForwardProp: (prop) => prop !== "customFrame",
+})(({ customFrame }) => ({
   borderRadius: "50%",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-
+  backgroundColor: customFrame ? "#1d2f30" : "transparent",
   "& svg": {
-    color: "#FFFFFF",
+    color: customFrame ? "rgba(186, 226, 73, 1)" : "#FFFFFF",
     fontSize: 28,
   },
-
-  "&:hover": {
-    background: "#454444",
-    "& svg": { color: " rgba(186, 226, 73, 1)" },
-  },
-
-  "&:active": {
-    background: "#454444",
-    "& svg": { color: "rgba(104, 139, 5, 1))" },
-  },
-
-  "&.active svg": {
-    color: "red",
-  },
-
-  "&.Mui-disabled": {
-    backgroundColor: "#454444",
-    "& svg": { color: "rgba(137, 157, 157, 1))" },
-  },
-});
+}));
