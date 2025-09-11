@@ -1,5 +1,9 @@
-function App() {
-  return <div>App</div>;
-}
+import { Header } from "./components/UI/header";
 
-export default App;
+export function App() {
+  return (
+    <div>
+      <Header />
+    </div>
+  );
+}
