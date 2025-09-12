@@ -1,4 +1,5 @@
 export { default as MainPlant } from "./images/MainPlant.png";
+export { default as MobileMainPlant } from "./images/MobileMainPlant.png";
 export { default as Plant1 } from "./images/Plant 1.png";
 export { default as Plant2 } from "./images/Plant 2.png";
 export { default as Plant3 } from "./images/Plant 3.png";

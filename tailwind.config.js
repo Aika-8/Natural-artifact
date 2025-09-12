@@ -16,6 +16,10 @@ export default {
         "almost-black": "hsl(0, 0%, 8%)",
         "premium-green": "rgba(186, 226, 73, 1)",
       },
+      backgroundImage: {
+        "top-content": "url('./src/assets/images/MainPlant.png')",
+        "mobile-top-content": "url('./src/assets/images/MobileMainPlant.png')",
+      },
     },
   },
   plugins: [],
