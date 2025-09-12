@@ -1,9 +1,9 @@
-import { Header } from "./components/UI/header";
+import { TopContent } from "./components/main/TopContent";
 
 export function App() {
   return (
     <div>
-      <Header />
+      <TopContent />
     </div>
   );
 }
