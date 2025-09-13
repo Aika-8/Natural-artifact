@@ -4,7 +4,7 @@ import { NavItem } from "../UI/header/nav-item";
 export const TopContent = () => {
   return (
     <div className="w-full bg-mobile-top-content lg:bg-top-content bg-center bg-cover">
-      <div className="absolute inset-0 bg-[rgba(29,47,48,1)] opacity-70"></div>
+      <div className="absolute inset-0 bg-[rgba(29,47,48,1)] opacity-70 h-[344px] lg:h-[490px]"></div>
       <div className="relative z-10 flex flex-col gap-[30px] lg:gap-4 px-8 lg:px-16 h-[344px] lg:h-[490px] max-w-[1536px] mx-auto">
         <nav className="flex gap-8 lg:hidden">
           <NavItem text="Каталог" />
