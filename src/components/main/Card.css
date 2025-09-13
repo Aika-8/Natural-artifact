@@ -1,0 +1,53 @@
+.swiper-button-prev,
+.swiper-button-next {
+  width: 25px;
+  height: 25px;
+  background-color: rgba(137, 157, 157, 1);
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.swiper-button-prev {
+  mask-image: url("/path/to/left-arrow.svg");
+}
+.swiper-button-next {
+  mask-image: url("/path/to/right-arrow.svg");
+}
+
+.swiper-button-prev.active,
+.swiper-button-next.active {
+  background-color: rgba(186, 226, 73, 1);
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: rgba(11, 25, 25, 1);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: rgba(186, 226, 73, 1);
+}
+
+@media (min-width: 1001px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-pagination {
+    display: block;
+  }
+}
